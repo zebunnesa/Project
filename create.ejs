@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="site title">
+            <a href="/"><h1>blog ninja</h1></a>
+            <p>a net ninja</p>
+        </div>
+        <ul>
+            <li><a href="/"></a></li>
+            <li><a href="/about"></a></li>
+            <li><a href="/blogs/create"></a></li>
+        </ul>
+    </nav>
+
+    <div class="create blog content">
+
+        <form action="for">
+            <label for="title">blog title</label>
+            <input type="text "  id="title"  />
+            <label for="title">blog snippet</label>
+            <input type="text "  id="  snippet"/>
+            <label for="body">blog body</label>
+            <button>submit</button>
+        </form>
+    </div>
+    <% include('./partail/nav.ejs') %>
+</body>
+</html>

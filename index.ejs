@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include('./partail/nav.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Document <%= title %></title>
+</head>
+<body>
+
+    <% include('./partail/nav.ejs') %>
+    <nav>
+        <div class="site-title">
+            <a href="/">blog ninja</a>
+            <p>net ninja site</p>
+        </div>
+        <ul>
+            <li><a href="/"></a></li>
+            <li><a href="/about"></a></li>
+            <li><a href="/blogs/create"></a></li>
+        </ul>
+        <div class="blog content">
+            <h2>all blogs</h2>
+            <% if (blogs.length>0){<%
+                <% blogs.forEach(blog=>{<%
+                    <h3 class='title'><% title%> </h3>
+                <p class="snippet"><% snippet %></p>
+               %> })
+            <%}%>
+        </div>
+    </nav>
+</body>
+</html>
